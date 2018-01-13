@@ -141,12 +141,7 @@ public class PersonalHomegetGoodsByIdActivity extends Activity implements Observ
         shop_name = (TextView) findViewById(R.id.shop_name);
         iv2 = (ImageView) findViewById(R.id.iv2);
         tel = (ImageView) findViewById(R.id.tel);
-        tel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                callPhone.requestPermission();
-            }
-        });
+
         goods_name = (TextView) findViewById(R.id.goods_name);
         tv2 = (TextView) findViewById(R.id.tv2);
         tv_goods_introduce = (TextView) findViewById(R.id.tv_goods_introduce);
@@ -154,7 +149,18 @@ public class PersonalHomegetGoodsByIdActivity extends Activity implements Observ
         usingTime = (TextView) findViewById(R.id.usingTime);
         recyclerView_use_of_rules = (MaxRecyclerView) findViewById(R.id.recyclerView_use_of_rules);
 
-
+        iv_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        tel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                callPhone.requestPermission();
+            }
+        });
 
         bannerComponent = new BannerComponent(guide_indicator, banner_viewPager, true);
         homeadvindicatorAdapter = new HomeAdvIndicatorAdapter(this, getAdvList);
