@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title">#fafafa</color>
+    <color name="shallowblack">#19000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#444444</color>
+    <color name="blue">#498CFF</color>
+    <color name="text1">#705330</color>
+    <color name="text2">#66705330</color>
+    <color name="bantoum">#50999999</color>
+    <color name="login_button">#ed1c24</color>
+    <color name="text_line">#E6E6E7</color>
+    <color name="linefill">#DEEFE4</color>
+    <color name="description">#686868</color>
+    <color name="color_ff4a57">#ff4a57</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="color_tv_cNowPrice">#ff6600</color>
+    <color name="color_tv_name">#373737</color>
+    <color name="color_tv_cFormerPrice">#999999</color>
+    <color name = "gray">#DBDBDB</color>
+    <color name = "goods_blue">#199ed8</color>
+    <color name = "goods_red">#e65c65</color>
+    <color name = "goods_orange">#ff6600</color>
+    <color name = "goods_text_orange">#ff9b05</color>
+
+</resources>

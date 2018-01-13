@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="leaflet.miaoa.qmsh.leaflet.ui.personaluser.home.PersonalHomegetGoodsByIdActivity">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <RelativeLayout
+            android:id="@+id/iv_back"
+            android:layout_width="60dp"
+
+
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/back"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="商品详情"/>
+    </RelativeLayout>
+
+<leaflet.miaoa.qmsh.leaflet.ui.widget.ObservableScrollView
+    android:id="@+id/scrollView"
+    android:layout_below="@+id/head"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="216dp">
+
+        <android.support.v4.view.ViewPager
+
+            android:id="@+id/banner_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="216dp" />
+
+        <com.shizhefei.view.indicator.FixedIndicatorView
+            android:id="@+id/guide_indicator"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp" />
+    </FrameLayout>
+    <include android:id="@+id/middlePanel" layout="@layout/middle_price">
+
+    </include>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:background="@color/white"
+          android:layout_height="47dp">
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/warning"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@+id/iv1"
+              android:layout_marginLeft="2dp"
+              android:text="不支持随时退款"
+              android:textColor="@color/goods_red"
+              android:textSize="15sp"/>
+          <TextView
+              android:id="@+id/tv1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_alignParentRight="true"
+              android:text="支持过期自动退"
+              android:layout_marginRight="82dp"/>
+          <ImageView
+              android:layout_width="14dp"
+              android:layout_height="14dp"
+              android:layout_centerVertical="true"
+              android:scaleType="fitXY"
+              android:layout_toLeftOf="@+id/tv1"
+              android:layout_marginRight="5dp"
+              android:src="@drawable/right"/>
+      </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="商家信息"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+        <RelativeLayout
+            android:background="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <TextView
+                android:id="@+id/shop_address"
+                android:layout_marginLeft="16dp"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:text="店铺地址"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:id="@+id/shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/color_tv_name"
+                android:text="店铺名称"
+                android:layout_above="@+id/shop_address"
+                />
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/shop_address"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/location"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv2"
+                android:layout_below="@+id/shop_address"
+                android:layout_marginLeft="8dp"
+                android:text="1.4km"
+                android:textSize="12sp"
+                android:layout_marginTop="14dp"/>
+            <ImageView
+                android:id="@+id/tel"
+                android:layout_width="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/tel"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginRight="28dp"
+                android:layout_height="24dp" />
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="37dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="62dp"
+
+                android:layout_centerVertical="true"
+
+                android:background="@color/color_tv_cFormerPrice"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="45dp">
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="商品名称"
+                android:textColor="@color/color_tv_name"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="详细描述："
+                android:textSize="13sp"
+                />
+            <TextView
+                android:layout_below="@+id/tv2"
+                android:id="@+id/tv_goods_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="13sp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="45dp">
+            <TextView
+
+             android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="16dp"
+                android:text="购买须知"
+                android:textColor="@color/color_tv_name"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="有效期："
+                android:textColor="@color/goods_text_orange"/>
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:id="@+id/term_of_validity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="使用时间："
+                android:textColor="@color/goods_text_orange"/>
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:id="@+id/usingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="使用规则："
+                android:textColor="@color/goods_text_orange"/>
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                />
+            <leaflet.miaoa.qmsh.leaflet.ui.widget.MaxRecyclerView
+                android:layout_marginTop="14dp"
+                android:id="@+id/recyclerView_use_of_rules"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content">
+
+            </leaflet.miaoa.qmsh.leaflet.ui.widget.MaxRecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+</leaflet.miaoa.qmsh.leaflet.ui.widget.ObservableScrollView>
+       <RelativeLayout
+           android:layout_below="@+id/head"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <include android:id="@+id/topPanel"
+
+               layout="@layout/middle_price" android:visibility="gone" />
+       </RelativeLayout>
+
+   </RelativeLayout>
+</FrameLayout>

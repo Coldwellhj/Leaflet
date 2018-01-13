@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <android.support.v4.view.ViewPager
+
+            android:id="@+id/banner_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <com.shizhefei.view.indicator.FixedIndicatorView
+            android:id="@+id/guide_indicator"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="#fafafa"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/near_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/near_shop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附近店铺"
+                android:layout_marginTop="5dp"
+                android:textColor="#333333"
+                android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/near_coupon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/near_coupon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附近优惠"
+                android:layout_marginTop="5dp"
+                android:textColor="#333333"
+                android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/online_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/online_shop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在线商城"
+                android:layout_marginTop="5dp"
+                android:textColor="#333333"
+                android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fans_exclusive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/fans_exclusive"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="粉丝专享"
+                android:layout_marginTop="5dp"
+                android:textColor="#333333"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

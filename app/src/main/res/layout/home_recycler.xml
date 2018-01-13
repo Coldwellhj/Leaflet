@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_item_root"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <leaflet.miaoa.qmsh.leaflet.ui.widget.MyGridView
+        android:id="@+id/main_detail_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2">
+
+    </leaflet.miaoa.qmsh.leaflet.ui.widget.MyGridView>
+    <leaflet.miaoa.qmsh.leaflet.ui.widget.NoslidingListView
+        android:id="@+id/main_detail_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </leaflet.miaoa.qmsh.leaflet.ui.widget.NoslidingListView>
+    <leaflet.miaoa.qmsh.leaflet.ui.widget.NoslidingListView
+        android:id="@+id/main_detail_coupons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </leaflet.miaoa.qmsh.leaflet.ui.widget.NoslidingListView>
+</LinearLayout>
